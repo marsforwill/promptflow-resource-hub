@@ -17,6 +17,9 @@ from promptflow.tracing import start_trace
 from dotenv import load_dotenv  
 import os  
 import json
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Add tracing
 from promptflow.tracing import trace
