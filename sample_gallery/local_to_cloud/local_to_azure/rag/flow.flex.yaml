@@ -3,9 +3,11 @@ entry: rag_flexflow:generate
 environment:
   python_requirements_txt: requirements.txt
 environment_variables:
-  AZURE_OPENAI_API_KEY: ${yijun-aoai.api_key}
-  AZURE_OPENAI_ENDPOINT: ${yijun-aoai.api_base}
+  AZURE_OPENAI_API_KEY: 
+  AZURE_OPENAI_ENDPOINT: https://marsopenai.openai.azure.com/
   AZURE_OPENAI_API_TYPE: azure
-  AZURE_OPENAI_API_VERSION: 2024-02-15-preview
-  AZURE_OPENAI_CHAT_DEPLOYMENT: gpt-4-32k
+  AZURE_OPENAI_API_VERSION: 2023-03-15-preview
+  AZURE_OPENAI_CHAT_DEPLOYMENT: gpt-35-turbo
   AZURE_OPENAI_EMBEDDING_DEPLOYMENT: text-embedding-ada-002
+  #http://127.0.0.1:23333/v1.0/ui/chat/?flow=QzpcVXNlcnNcc2hpbWlubGl1XHNvdXJjZVxyZXBvc1xwcm9tcHRmbG93LXJlc291cmNlLWh1YlxzYW1wbGVfZ2FsbGVyeVxsb2NhbF90b19jbG91ZFxsb2NhbF90b19henVyZVxyYWdcZmxvdy5mbGV4LnlhbWw%3D&serve_app_port=61420&enable_internal_features=false
+  #https://reimagined-spoon-pjgvj56rrr4f76vr-23333.app.github.dev/v1.0/ui/chat/?flow=L3dvcmtzcGFjZXMvcHJvbXB0Zmxvdy1yZXNvdXJjZS1odWIvc2FtcGxlX2dhbGxlcnkvbG9jYWxfdG9fY2xvdWQvbG9jYWxfdG9fYXp1cmUvcmFnL2Zsb3cuZmxleC55YW1s&serve_app_port=41475&enable_internal_features=false
