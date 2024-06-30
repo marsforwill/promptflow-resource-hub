@@ -2,6 +2,8 @@ import json
 import os
 from dataclasses import dataclass
 from pathlib import Path
+import pathlib
+import sys
 
 from dotenv import load_dotenv
 from jinja2 import Template
@@ -34,7 +36,6 @@ from langchain_openai import AzureOpenAIEmbeddings
 
 
 BASE_DIR = Path(__file__).absolute().parent
-
 
 
 
@@ -83,12 +84,14 @@ if __name__ == "__main__":
     from promptflow.tracing import start_trace
 
     import rag_paths
+    code_path = str(pathlib.Path(__file__).parent / "../rag")
+    sys.path.insert(0, code_path)
     from rag_flexflow import rag_chain
 
     start_trace()
     model_config = AzureOpenAIModelConfiguration(
-        connection="yijun-aoai",
-        azure_deployment="gpt-4-32k",
+        connection="shimin-aoai",
+        azure_deployment="gpt-35-turbo",
     )
     evaluator = QnAEvaluator(model_config)
 

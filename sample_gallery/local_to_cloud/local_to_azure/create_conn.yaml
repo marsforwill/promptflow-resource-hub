@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/AzureOpenAIConnection.schema.json
+name: shimin-aoai
+type: azure_open_ai
+api_key: "marsapikey"
+api_base: "https://marsopenai.openai.azure.com/"
+api_type: "azure"
+api_version: "2023-03-15-preview"

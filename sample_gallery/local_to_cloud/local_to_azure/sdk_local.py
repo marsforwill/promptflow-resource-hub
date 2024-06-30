@@ -59,8 +59,8 @@ if __name__ == "__main__":
 
     # run the flow with existing run
     model_config = AzureOpenAIModelConfiguration(
-        connection="yijun-aoai",
-        azure_deployment="gpt-4-32k",
+        connection="shimin-aoai",
+        azure_deployment="gpt-35-turbo",
     )
     eval_run = pf.run(
         flow=eval_flow,

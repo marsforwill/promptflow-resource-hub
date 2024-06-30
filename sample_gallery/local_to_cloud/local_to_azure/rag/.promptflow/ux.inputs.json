@@ -1,0 +1,15 @@
+{
+  "chat_list": [
+    {
+      "name": "default",
+      "inputs": {
+        "chat_history": [],
+        "question": "what is the idea?"
+      }
+    }
+  ],
+  "prompty_chat_list": [],
+  "init": {
+    "flow.flex.yaml": {}
+  }
+}

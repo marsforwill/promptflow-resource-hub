@@ -5,7 +5,7 @@ model:
     api: chat
     configuration:
         type: azure_openai
-        azure_deployment: gpt-4-32k
+        azure_deployment: gpt-4
     parameters:
         temperature: 0.2
         response_format:

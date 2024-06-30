@@ -3,7 +3,7 @@ entry: rag_flexflow:generate
 environment:
   python_requirements_txt: requirements.txt
 environment_variables:
-  AZURE_OPENAI_API_KEY: 
+  AZURE_OPENAI_API_KEY: marsapikey
   AZURE_OPENAI_ENDPOINT: https://marsopenai.openai.azure.com/
   AZURE_OPENAI_API_TYPE: azure
   AZURE_OPENAI_API_VERSION: 2023-03-15-preview

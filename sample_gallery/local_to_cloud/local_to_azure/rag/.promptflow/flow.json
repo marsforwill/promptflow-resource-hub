@@ -1,0 +1,32 @@
+{
+    "function": "generate",
+    "$schema": "https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json",
+    "entry": "rag_flexflow:generate",
+    "environment": {
+        "python_requirements_txt": "requirements.txt"
+    },
+    "environment_variables": {
+        "AZURE_OPENAI_API_KEY": "marsapikey",
+        "AZURE_OPENAI_ENDPOINT": "https://marsopenai.openai.azure.com/",
+        "AZURE_OPENAI_API_TYPE": "azure",
+        "AZURE_OPENAI_API_VERSION": "2023-03-15-preview",
+        "AZURE_OPENAI_CHAT_DEPLOYMENT": "gpt-35-turbo",
+        "AZURE_OPENAI_EMBEDDING_DEPLOYMENT": "text-embedding-ada-002"
+    },
+    "name": "rag",
+    "inputs": {
+        "question": {
+            "type": "string",
+            "default": "What is Task Decomposition?"
+        },
+        "chat_history": {
+            "type": "list",
+            "default": "[]"
+        }
+    },
+    "outputs": {
+        "output": {
+            "type": "string"
+        }
+    }
+}
