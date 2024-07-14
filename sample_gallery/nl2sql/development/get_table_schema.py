@@ -11,7 +11,7 @@ def get_table_schema(tables: str, schema_name: str, sqlconn: CustomConnection) -
     
     tables_list = ast.literal_eval(tables)
     print(tables_list)
-    uri = "mssql+pyodbc:///?odbc_connect=Driver={ODBC Driver 17 for SQL Server};Server="+sqlconn.configs['Server_name']+";Database="+sqlconn.configs['Database_name']+";Uid="+sqlconn.configs['User_name']+";Pwd="+sqlconn.secrets['Password']+";Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;}"   
+    uri = "mssql+pyodbc:///?odbc_connect=Driver={ODBC Driver 18 for SQL Server};Server="+sqlconn.configs['Server_name']+";Database="+sqlconn.configs['Database_name']+";Uid="+sqlconn.configs['User_name']+";Pwd="+sqlconn.secrets['Password']+";Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;}"   
     #print(uri)
     db = SQLDatabase.from_uri(uri,schema=schema_name, include_tables= tables_list )
         

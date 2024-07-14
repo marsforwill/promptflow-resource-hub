@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/CustomConnection.schema.json
+name: "custom-sqlconn"
+type: custom
+configs:
+  Server_name: "tcp:mysqlserver3123.database.windows.net.database.windows.net,1433"
+  User_name: "azureuser"
+  Database_name: "mySampleDatabase"
+secrets:
+# Don't replace the '<user-input>' placeholder. The application will prompt you to enter a value when it runs.
+  Password: "<user-input>"
+  #  pf connection create -f .\custom-sqlconn.yaml
