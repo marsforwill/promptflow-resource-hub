@@ -68,7 +68,7 @@ az login
 ```
 
 ```bash
-pf config set trace.destination="azureml://subscriptions/<subscription-id>/resourceGroups/<resource-group-name>/providers/Microsoft.MachineLearningServices/workspaces/<workspace-or-project-name>"
+pf config set trace.destination="azureml://subscriptions/6c6e486f-ca98-4ecb-9d08-ae77be7e2203/resourceGroups/openAIRGtest/providers/Microsoft.MachineLearningServices/workspaces/azureaistudiodemo"
 ```
 
 Then re-run your application, and you will be able to see another link in the output, which is the link to the trace in Azure AI Studio.
